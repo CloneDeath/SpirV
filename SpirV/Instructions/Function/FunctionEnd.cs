@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Function
+namespace SpirV.Instructions.Function
 {
 	/// <summary>
 	/// Last instruction of a function.

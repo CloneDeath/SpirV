@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Annotation
+namespace SpirV.Instructions.Annotation
 {
 	/// <summary>
 	/// Add a Decoration to another id.

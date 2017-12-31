@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.ControlFlow
+namespace SpirV.Instructions.ControlFlow
 {
 	/// <summary>
 	/// Return with no value from a function with void return type.

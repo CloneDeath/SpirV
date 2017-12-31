@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.ConstantCreation
+namespace SpirV.Instructions.ConstantCreation
 {
     /// <summary>
     /// Declare a new composite constant.

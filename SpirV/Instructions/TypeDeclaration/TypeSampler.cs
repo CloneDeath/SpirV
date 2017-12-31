@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.TypeDeclaration
+namespace SpirV.Instructions.TypeDeclaration
 {
 	/// <summary>
 	/// Declare the sampler type. Consumed by OpSampledImage. This 

@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Function
+namespace SpirV.Instructions.Function
 {
 	/// <summary>
 	/// Add a function. This instruction must be immediately followed by one OpFunctionParameter instruction per each

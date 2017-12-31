@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.ModeSetting
+namespace SpirV.Instructions.ModeSetting
 {
 	/// <summary>
 	/// Declare a capability used by this module.

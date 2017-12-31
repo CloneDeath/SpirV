@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.ControlFlow
+namespace SpirV.Instructions.ControlFlow
 {
 	/// <summary>
 	/// The block label instruction: Any reference to a block is through the Result id of its label.

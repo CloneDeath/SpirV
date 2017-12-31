@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Memory
+namespace SpirV.Instructions.Memory
 {
 	/// <summary>
 	/// Load through a pointer.

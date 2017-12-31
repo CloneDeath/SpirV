@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Illustrate.Vulkan.SpirV.Native
+namespace SpirV.Native
 {
 	[SuppressMessage("ReSharper", "InconsistentNaming")]
 	public static class Constants

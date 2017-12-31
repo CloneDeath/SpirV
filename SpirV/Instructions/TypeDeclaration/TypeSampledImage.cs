@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.TypeDeclaration
+namespace SpirV.Instructions.TypeDeclaration
 {
 	/// <summary>
 	/// Declare a sampled image type, the Result Type of OpSampledImage, or an externally combined sampler and image.

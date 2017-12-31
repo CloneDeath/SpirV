@@ -1,8 +1,7 @@
 ﻿using FluentAssertions;
-using Illustrate.Vulkan.SpirV;
 using Xunit;
 
-namespace Illustrate.Vulkan.Tests.SpirV
+namespace SpirV.Tests
 {
     public class ByteArrayTests
     {

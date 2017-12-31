@@ -1,4 +1,4 @@
-﻿namespace Illustrate.Vulkan.SpirV.Instructions.ModeSetting
+﻿namespace SpirV.Instructions.ModeSetting
 {
 	public partial class Capability
 	{

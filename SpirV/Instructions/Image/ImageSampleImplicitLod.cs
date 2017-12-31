@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Image
+namespace SpirV.Instructions.Image
 {
 	/// <summary>
 	/// Sample an image with an implicit level of detail.

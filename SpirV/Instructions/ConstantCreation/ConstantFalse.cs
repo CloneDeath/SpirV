@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.ConstantCreation
+namespace SpirV.Instructions.ConstantCreation
 {
 	/// <summary>
 	/// Declare a false Boolean-type scalar constant.

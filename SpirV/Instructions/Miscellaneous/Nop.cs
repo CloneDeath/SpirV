@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Miscellaneous
+namespace SpirV.Instructions.Miscellaneous
 {
 	/// <summary>
 	/// This has no semantic impact and can safely be removed from a module.

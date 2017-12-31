@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Illustrate.Vulkan.SpirV.Native
+namespace SpirV.Native
 {
 	public enum SourceLanguage {
 		Unknown = 0,

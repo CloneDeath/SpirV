@@ -1,4 +1,4 @@
-﻿namespace Illustrate.Vulkan.SpirV.Instructions
+﻿namespace SpirV.Instructions
 {
 	public abstract class SingleResultInstruction : BaseInstruction
 	{

@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Function
+namespace SpirV.Instructions.Function
 {
 	/// <summary>
 	/// Declare a formal parameter of the current function.

@@ -1,4 +1,4 @@
-﻿namespace Illustrate.Vulkan.SpirV.Instructions.Pipe
+﻿namespace SpirV.Instructions.Pipe
 {
 	public class ReadPipe
 	{

@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Extension
+namespace SpirV.Instructions.Extension
 {
 	/// <summary>
 	/// Import an extended set of instructions. It can be later referenced by the Result id.

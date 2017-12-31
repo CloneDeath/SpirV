@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Extension
+namespace SpirV.Instructions.Extension
 {
 	/// <summary>
 	/// Declare use of an extension to SPIR-V. This allows validation of

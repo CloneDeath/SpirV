@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.TypeDeclaration
+namespace SpirV.Instructions.TypeDeclaration
 {
 	/// <summary>
 	/// Declare a new image type. Consumed, for example, by OpTypeSampledImage. 

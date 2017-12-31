@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Memory
+namespace SpirV.Instructions.Memory
 {
 	/// <summary>
 	/// Allocate an object in memory, resulting in a pointer to it, which can be used with OpLoad and OpStore.

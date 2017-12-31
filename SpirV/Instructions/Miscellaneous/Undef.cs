@@ -1,6 +1,6 @@
-﻿using Illustrate.Vulkan.SpirV.Native;
+﻿using SpirV.Native;
 
-namespace Illustrate.Vulkan.SpirV.Instructions.Miscellaneous
+namespace SpirV.Instructions.Miscellaneous
 {
 	/// <summary>
 	/// Make an intermediate object whose value is undefined.

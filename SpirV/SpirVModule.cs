@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace Illustrate.Vulkan.SpirV
+﻿namespace SpirV
 {
 	public class SpirVModule
 	{
