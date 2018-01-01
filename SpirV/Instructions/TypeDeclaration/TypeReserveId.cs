@@ -7,6 +7,9 @@ namespace SpirV.Instructions.TypeDeclaration
 	/// </summary>
 	public class TypeReserveId : SingleResultInstruction
 	{
+		public TypeReserveId() {}
+		public TypeReserveId(int resultId) : base(resultId) {}
+		
 		public override Operation OpCode => Operation.TypeReserveId;
 	}
 }

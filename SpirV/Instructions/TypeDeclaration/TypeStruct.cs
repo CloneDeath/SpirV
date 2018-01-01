@@ -3,8 +3,7 @@
 namespace SpirV.Instructions.TypeDeclaration
 {
 	/// <summary>
-	/// Declare a new structure type: an aggregate of potentially heterogeneous members.
-	/// 
+	/// Declare a new structure type: an aggregate of potentially heterogeneous members. 
 	/// If an operand is not yet defined, it must be defined by an OpTypePointer, 
 	/// where the type pointed to is an OpTypeStruct.
 	/// </summary>

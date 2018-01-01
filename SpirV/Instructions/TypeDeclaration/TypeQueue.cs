@@ -7,6 +7,9 @@ namespace SpirV.Instructions.TypeDeclaration
 	/// </summary>
 	public class TypeQueue : SingleResultInstruction
 	{
+		public TypeQueue() {}
+		public TypeQueue(int resultId) : base(resultId) {}
+		
 		public override Operation OpCode => Operation.TypeQueue;
 	}
 }

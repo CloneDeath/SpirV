@@ -8,7 +8,7 @@ namespace SpirV.Instructions.Miscellaneous
 	public class Nop : BaseInstruction
 	{
 		public override int WordCount => 1;
-		public override Operation OpCode => Operation.NoLine;
+		public override Operation OpCode => Operation.Nop;
 
 		protected override byte[] GetParameterBytes() {
 			return new byte[0];

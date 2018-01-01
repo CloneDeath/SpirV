@@ -9,6 +9,9 @@ namespace SpirV.Instructions.TypeDeclaration
 	/// </summary>
 	public class TypeSampler : SingleResultInstruction
 	{
+		public TypeSampler(){}
+		public TypeSampler(int resultId) : base(resultId){}
+		
 		public override Operation OpCode => Operation.TypeSampler;
 	}
 }

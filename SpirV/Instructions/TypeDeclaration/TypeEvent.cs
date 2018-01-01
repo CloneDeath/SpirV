@@ -7,6 +7,9 @@ namespace SpirV.Instructions.TypeDeclaration
 	/// </summary>
 	public class TypeEvent : SingleResultInstruction
 	{
+		public TypeEvent() {}
+		public TypeEvent(int resultId) : base(resultId) {}
+		
 		public override Operation OpCode => Operation.TypeEvent;
 	}
 }
