@@ -1,4 +1,4 @@
-﻿using SpirV.Instructions.Arithmetic.SubTypes;
+﻿using SpirV.Instructions.SubTypes;
 using SpirV.Native;
 
 namespace SpirV.Instructions.Arithmetic

@@ -1,4 +1,4 @@
-﻿namespace SpirV.Instructions.Arithmetic.SubTypes {
+﻿namespace SpirV.Instructions.SubTypes {
 	public abstract class SingleOperandInstruction : BaseInstruction {
 		public override int WordCount => 4;
 		
