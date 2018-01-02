@@ -43,7 +43,7 @@ namespace SpirV.Instructions.Debug
 			byteArray.PushUInt32((uint)SourceLanguage);
 			byteArray.PushInt32(Version);
 			if (FileIdIsValid) {
-				byteArray.PushUInt32((uint)FileId);
+				byteArray.PushUInt32((uint) (FileId ?? 0));
 				if (SourceTextIsValid) {
 					byteArray.PushString(SourceText);
 				}

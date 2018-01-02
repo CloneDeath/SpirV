@@ -1,4 +1,5 @@
-﻿namespace SpirV.Native {
+﻿// ReSharper disable InconsistentNaming
+namespace SpirV.Native {
 	public enum Operation {
 		Nop = 0,
 		Undef = 1,

@@ -1,4 +1,5 @@
-﻿namespace SpirV.Native {
+﻿// ReSharper disable InconsistentNaming
+namespace SpirV.Native {
 	public enum Decoration
 	{
 		/// <summary>

@@ -19,6 +19,22 @@ namespace SpirV
 		public void PushUInt32(uint value) {
 			_bytes.AddRange(BitConverter.GetBytes(value));
 		}
+		
+		public void PushUInt32(int value) {
+			_bytes.AddRange(BitConverter.GetBytes((uint)value));
+		}
+		
+		public void PushUInt32(IEnumerable<uint> values) {
+			foreach (var value in values) {
+				_bytes.AddRange(BitConverter.GetBytes(value));
+			}
+		}
+		
+		public void PushUInt32(IEnumerable<int> values) {
+			foreach (var value in values) {
+				_bytes.AddRange(BitConverter.GetBytes((uint)value));
+			}
+		}
 
 		public void Push(byte[] bytes) {
 			_bytes.AddRange(bytes);

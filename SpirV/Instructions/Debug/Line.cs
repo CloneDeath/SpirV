@@ -1,5 +1,4 @@
-﻿using System;
-using SpirV.Native;
+﻿using SpirV.Native;
 
 namespace SpirV.Instructions.Debug
 {

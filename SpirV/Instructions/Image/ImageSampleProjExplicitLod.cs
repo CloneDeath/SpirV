@@ -7,7 +7,7 @@ namespace SpirV.Instructions.Image
 	/// </summary>
 	public class ImageSampleProjExplicitLod : BaseInstruction {
 		public override int WordCount => 6 + Ids.Length;
-		public override Operation OpCode => Operation.ImageSampleProjImplicitLod;
+		public override Operation OpCode => Operation.ImageSampleProjExplicitLod;
 		
 		/// <summary>
 		/// Result Type must be a vector of four components of floating-point type or integer type.
