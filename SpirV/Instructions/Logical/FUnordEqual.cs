@@ -1,6 +1,12 @@
-﻿namespace SpirV.Instructions.Logical
+﻿using SpirV.Instructions.Logical.InstructionTypes;
+using SpirV.Native;
+
+namespace SpirV.Instructions.Logical
 {
-	public class FUnordEqual
-	{
+	/// <summary>
+	/// Floating-point comparison for being unordered or equal.
+	/// </summary>
+	public class FUnordEqual : FloatBinaryInstruction {
+		public override Operation OpCode => Operation.FUnordEqual;
 	}
 }
