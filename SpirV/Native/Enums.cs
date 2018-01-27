@@ -197,9 +197,9 @@ namespace SpirV.Native
 	}
 
 	public enum SelectionControlMask {
-		MaskNone = 0,
-		FlattenMask = 0x00000001,
-		DontFlattenMask = 0x00000002
+		None = 0,
+		Flatten = 0x00000001,
+		DontFlatten = 0x00000002
 	}
 
 	public enum LoopControlShift {
@@ -209,9 +209,9 @@ namespace SpirV.Native
 	}
 
 	public enum LoopControlMask {
-		MaskNone = 0,
-		UnrollMask = 0x00000001,
-		DontUnrollMask = 0x00000002
+		None = 0,
+		Unroll = 0x00000001,
+		DontUnroll = 0x00000002
 	}
 
 	public enum FunctionControlShift {
