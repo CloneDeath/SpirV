@@ -235,33 +235,10 @@ namespace SpirV.Native
 		Max = 0x7fffffff
 	}
 
-	public enum MemorySemanticsMask {
-		MaskNone = 0,
-		AcquireMask = 0x00000002,
-		ReleaseMask = 0x00000004,
-		AcquireReleaseMask = 0x00000008,
-		SequentiallyConsistentMask = 0x00000010,
-		UniformMemoryMask = 0x00000040,
-		SubgroupMemoryMask = 0x00000080,
-		WorkgroupMemoryMask = 0x00000100,
-		CrossWorkgroupMemoryMask = 0x00000200,
-		AtomicCounterMemoryMask = 0x00000400,
-		ImageMemoryMask = 0x00000800
-	}
-
 	public enum MemoryAccessShift {
 		VolatileShift = 0,
 		AlignedShift = 1,
 		NontemporalShift = 2
-	}
-
-	public enum Scope {
-		CrossDevice = 0,
-		Device = 1,
-		Workgroup = 2,
-		Subgroup = 3,
-		Invocation = 4,
-		Max = 0x7fffffff
 	}
 
 	public enum GroupOperation {
