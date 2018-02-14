@@ -19,7 +19,7 @@ namespace SpirV.Instructions.Atomic
 		
 		public Scope Scope { get; set; }
 		
-		public MemorySemanticsMask Semantics { get; set; }
+		public MemorySemantics Semantics { get; set; }
 		
 		/// <summary>
 		/// Value is the value to write.

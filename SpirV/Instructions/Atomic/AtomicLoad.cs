@@ -23,7 +23,7 @@ namespace SpirV.Instructions.Atomic
 		/// </summary>
 		public int PointerId { get; set; }
 		public Scope Scope { get; set; }
-		public MemorySemanticsMask MemorySemantics { get; set; }
+		public MemorySemantics MemorySemantics { get; set; }
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

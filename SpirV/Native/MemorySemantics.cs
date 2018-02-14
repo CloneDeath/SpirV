@@ -16,7 +16,7 @@ namespace SpirV.Native {
 	/// This value is a mask; it can be formed by combining the bits from multiple rows in the table below.
 	/// </summary>
 	[Flags]
-	public enum MemorySemanticsMask {
+	public enum MemorySemantics {
 		None = 0,
 		
 		/// <summary>

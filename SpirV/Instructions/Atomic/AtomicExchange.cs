@@ -22,7 +22,7 @@ namespace SpirV.Instructions.Atomic
 		public int ResultId { get; set; }
 		public int PointerId { get; set; }
 		public Scope Scope { get; set; }
-		public MemorySemanticsMask MemorySemantics { get; set; }
+		public MemorySemantics MemorySemantics { get; set; }
 		
 		/// <summary>
 		/// The type of Value must be the same as Result Type.
