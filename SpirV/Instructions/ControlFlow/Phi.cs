@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ControlFlow
 {
@@ -31,7 +32,7 @@ namespace SpirV.Instructions.ControlFlow
 		/// There must be exactly one Parent i for each parent block of the current block in the CFG.
 		/// All Variables must have a type matching Result Type.
 		/// </summary>
-		public int[] VariableParentIds { get; set; }
+		public int[] VariableParentIds { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

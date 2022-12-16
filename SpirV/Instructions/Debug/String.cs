@@ -13,11 +13,11 @@ namespace SpirV.Instructions.Debug
 		public override Operation OpCode => Operation.String;
 
 		public int ResultId { get; set; }
-		
+
 		/// <summary>
 		/// String is the literal string being assigned a Result &lt;id&gt;
 		/// </summary>
-		public string StringText { get; set; }
+		public string StringText { get; set; } = string.Empty;
 
 		protected override byte[] GetParameterBytes() {
 			var byteArray = new ByteArray();

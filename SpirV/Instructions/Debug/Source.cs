@@ -8,14 +8,14 @@ namespace SpirV.Instructions.Debug
 	/// </summary>
 	public class Source : BaseInstruction
 	{
-		public Source(SourceLanguage language, int version, int? fileId = null, string sourceText = null) {
+		public Source(SourceLanguage language, int version, int? fileId = null, string? sourceText = null) {
 			SourceLanguage = language;
 			Version = version;
 			FileId = fileId;
 			SourceText = sourceText;
 		}
 
-		public override int WordCount => 3 + (FileIdIsValid ? 1 : 0) + (SourceTextIsValid ? ByteArray.GetWordCount(SourceText) : 0);
+		public override int WordCount => 3 + (FileIdIsValid ? 1 : 0) + (SourceTextIsValid ? ByteArray.GetWordCount(SourceText ?? string.Empty) : 0);
 		public override Operation OpCode => Operation.Source;
 
 		public SourceLanguage SourceLanguage { get; set; }
@@ -33,7 +33,7 @@ namespace SpirV.Instructions.Debug
 		/// <summary>
 		/// Source is the text of the source-level file.
 		/// </summary>
-		public string SourceText { get; set; }
+		public string? SourceText { get; set; }
 
 		protected bool FileIdIsValid => FileId != null || SourceTextIsValid;
 		protected bool SourceTextIsValid => !string.IsNullOrEmpty(SourceText);
@@ -45,7 +45,7 @@ namespace SpirV.Instructions.Debug
 			if (FileIdIsValid) {
 				byteArray.PushUInt32((uint) (FileId ?? 0));
 				if (SourceTextIsValid) {
-					byteArray.PushString(SourceText);
+					byteArray.PushString(SourceText ?? string.Empty);
 				}
 			}
 			return byteArray.ToArray();

@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ConstantCreation
 {
@@ -26,7 +27,7 @@ namespace SpirV.Instructions.ConstantCreation
 		/// The Constituents must appear in the order needed by the definition of the type of the result.
 		/// The Constituents must be the &lt;id&gt; of other specialization constant or constant declarations.
 		/// </summary>
-		public int[] ConstituentIds { get; set; }
+		public int[] ConstituentIds { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var byteArray = new ByteArray();

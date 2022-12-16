@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ControlFlow
 {
@@ -8,7 +9,7 @@ namespace SpirV.Instructions.ControlFlow
 	/// This instruction must be the last instruction in a block.
 	/// </summary>
 	public class BranchConditional : BaseInstruction {
-		public override int WordCount => 4 + (BranchWeights?.Length ?? 0);
+		public override int WordCount => 4 + BranchWeights.Length;
 		public override Operation OpCode => Operation.BranchConditional;
 		
 		/// <summary>
@@ -25,7 +26,7 @@ namespace SpirV.Instructions.ControlFlow
 		/// False Label must be an OpLabel in the current function.
 		/// </summary>
 		public int FalseLabelId { get; set; }
-		
+
 		/// <summary>
 		/// Branch weights are unsigned 32-bit integer literals.
 		/// There must be either no Branch Weights or exactly two branch weights.
@@ -34,16 +35,14 @@ namespace SpirV.Instructions.ControlFlow
 		/// The implied probability that a branch is taken is its weight divided by the
 		/// sum of the two Branch weights.
 		/// </summary>
-		public int[] BranchWeights { get; set; }
+		public int[] BranchWeights { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();
 			ba.PushUInt32(ConditionId);
 			ba.PushUInt32(TrueLabelId);
 			ba.PushUInt32(FalseLabelId);
-			if (BranchWeights != null) {
-				ba.PushUInt32(BranchWeights);
-			}
+			ba.PushUInt32(BranchWeights);
 			return ba.ToArray();
 		}
 	}

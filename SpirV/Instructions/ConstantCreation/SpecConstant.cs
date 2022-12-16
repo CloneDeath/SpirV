@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ConstantCreation
 {
@@ -21,7 +22,7 @@ namespace SpirV.Instructions.ConstantCreation
 		/// Types 32 bits wide or smaller take one word.
 		/// Larger types take multiple words, with low-order words appearing first.
 		/// </summary>
-		public uint[] Values { get; set; }
+		public uint[] Values { get; set; } = Array.Empty<uint>();
 		
 		protected override byte[] GetParameterBytes() {
 			var byteArray = new ByteArray();

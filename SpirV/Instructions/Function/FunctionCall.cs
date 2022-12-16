@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Function
 {
@@ -29,7 +30,7 @@ namespace SpirV.Instructions.Function
 		/// <summary>
 		/// Argument N is the object to copy to parameter N of Function.
 		/// </summary>
-		public int[] ArgumentIds { get; set; }
+		public int[] ArgumentIds { get; set; } = Array.Empty<int>();
 
 		protected override byte[] GetParameterBytes() {
 			var byteArray = new ByteArray();

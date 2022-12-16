@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ControlFlow
 {
@@ -34,7 +35,7 @@ namespace SpirV.Instructions.ControlFlow
 		/// If this width is not a multiple of 32-bits,
 		/// the literals must be sign extended when the OpTypeInt Signedness is set to 1. (See Literal Number.)
 		/// </summary>
-		public int[] TargetIds { get; set; }
+		public int[] TargetIds { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Composite
 {
@@ -33,7 +34,7 @@ namespace SpirV.Instructions.Composite
 		/// All composite constituents use zero-based numbering, as described by their OpType… instruction.
 		/// The type of the part selected to modify must match the type of Object.
 		/// </summary>
-		public int[] Indexes { get; set; }
+		public int[] Indexes { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Composite
 {
@@ -39,7 +40,7 @@ namespace SpirV.Instructions.Composite
 		/// from 0 to N - 1, where N is the total number of components.
 		/// </summary>
 		public int Vector2Id { get; set; }
-		
+
 		/// <summary>
 		/// Components are these logical numbers (see above), selecting which of the logically numbered components
 		/// form the result.
@@ -50,7 +51,7 @@ namespace SpirV.Instructions.Composite
 		/// source and is undefined.
 		/// All Component literals must either be FFFFFFFF or in [0, N - 1] (inclusive).
 		/// </summary>
-		public uint[] Components { get; set; }
+		public uint[] Components { get; set; } = Array.Empty<uint>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

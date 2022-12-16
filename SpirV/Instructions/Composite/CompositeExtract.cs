@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Composite
 {
@@ -21,13 +22,13 @@ namespace SpirV.Instructions.Composite
 		/// Composite is the composite to extract from.
 		/// </summary>
 		public int CompositeId { get; set; }
-		
+
 		/// <summary>
 		/// Indexes walk the type hierarchy, potentially down to component granularity, to select the part to extract.
 		/// All indexes must be in bounds.
 		/// All composite constituents use zero-based numbering, as described by their OpType… instruction.
 		/// </summary>
-		public int[] Indexes { get; set; }
+		public int[] Indexes { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Composite
 {
@@ -20,7 +21,7 @@ namespace SpirV.Instructions.Composite
 		public int ResultTypeId { get; set; }
 		
 		public int ResultId { get; set; }
-		
+
 		/// <summary>
 		/// Constituents will become members of a structure, or elements of an array, or components of a vector,
 		/// or columns of a matrix.
@@ -31,7 +32,7 @@ namespace SpirV.Instructions.Composite
 		/// The Constituents must appear in the order needed by the definition of the type of the result.
 		/// When constructing a vector, there must be at least two Constituent operands.
 		/// </summary>
-		public int[] Constituents { get; set; }
+		public int[] Constituents { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

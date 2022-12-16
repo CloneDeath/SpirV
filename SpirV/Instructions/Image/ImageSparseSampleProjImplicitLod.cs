@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.Image
 {
@@ -15,7 +16,7 @@ namespace SpirV.Instructions.Image
 		public int SampledImageId { get; set; }
 		public int CoordinateId { get; set; }
 		public ImageOperands? ImageOperands { get; set; }
-		public int[] Ids { get; set; }
+		public int[] Ids { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var ba = new ByteArray();

@@ -1,4 +1,5 @@
-﻿using SpirV.Native;
+﻿using System;
+using SpirV.Native;
 
 namespace SpirV.Instructions.ConstantCreation
 {
@@ -61,7 +62,7 @@ namespace SpirV.Instructions.ConstantCreation
 		/// - for the AccessChain named opcodes, their Base is allowed to be a global (module scope)
 		/// OpVariable instruction.
 		/// </summary>
-		public int[] Operands { get; set; }
+		public int[] Operands { get; set; } = Array.Empty<int>();
 		
 		protected override byte[] GetParameterBytes() {
 			var byteArray = new ByteArray();
